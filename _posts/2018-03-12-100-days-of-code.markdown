@@ -1,0 +1,105 @@
+---
+layout: single
+title:  "Reflections on My 100 Days of Code"
+date:   2018-03-12
+categories: [programming]
+tags: [100 days of code]
+---
+
+![alt text][100 days of code]
+
+## Made a Challenge to Myself
+
+In the fall of 2017 I made the decision that I’d learn how to build web applications. Around this time I came across [Alexander Kallaway‘s 100 Days of Code][100 Days of Code - Official Website] challenge and decided I’d use this challenge as a means of keeping myself accountable. The basic idea is to dedicate time each day to coding. I committed to myself that I’d spend 1 hour each day coding and learning about code. I just finished my 100 days and thought I could share some of my reflections with others that might be thinking of doing the same.
+
+## Bootcamps and Computer Science Degrees
+
+I currently work full time so it was pretty clear to me from the start that I wouldn’t be enrolling in a full-time bootcamp or computer science degree. I needed a way to learn in my own free time. I tracked down a number of people that work as web developers and picked their brains on this topic. The general consensus was there are a lot of self taught people in the industry. So that’s what I intended to do. I’d teach myself how to code.
+
+## Choosing a Plan for Learning
+
+This was **HUGE** for me and I cannot stress this enough. I needed a plan. What do I mean by that? Well, I quickly found there are a seemingly infinite source of resources for learning how to code, and that is so cool. But I know myself well enough to know that I could very easily, and likely would traverse a meandering path with no real direction. I’d say, oh this tutorial looks really cool. Oh, but wait, what about this shiny feature I could learn about. Sure, I’d probably learn but I wasn’t confident it would be the best path. I stepped back and decided on what the ultimate goal or outcome would be. I wanted to learn how to build a very specific web application with a couple specific features. After doing some online research I decided Ruby on Rails is where I should focus my learning these next 100 days. I then found [The Odin Project][The Odin Project] which is a free, open source curriculum for learning full stack web development with Ruby on Rails. By deciding on this from the very start I knew exactly what needed to be done each and every day. It was laid out for me very concisely in the Odin Project’s curriculum. I didn’t have to think of how to fill my coding time each day and instead could simply execute on what had already been laid out for me.
+
+## The When and the Where
+
+It was critical in the first couple days to create a routine if I were going to keep with this and not fall off after a couple of days. I decided I’d do this in the morning before I went in to work. This meant I’d need to get up extra early to give myself time to wake up, and then really wake up my mind so I could actually think and function like a person instead of a zombie. So I did it, and it was **hard**, at *first*. I set my alarm for 5am and that first day was not fun. But here are a couple tricks that helped me be most successful.
+
+1. I put my phone in the next room. Why? When my alarm would go off I’d have to get out of bed and travel a good distance away from my bed to turn it off. By doing this I avoided falling back on bad habits of hitting snooze 3 or 4 times like the old me would have done.
+2. I had my coffee ready to brew. I’m 100% addicted to caffeine so I needed this ASAP to get my brain ready to learn and code.
+3. Computer setup and ready to go. The night before I’d have pulled up all the resources for that days session. Articles, videos, code editor, etc.
+
+I would post up wth my coffee at my desk and click-clack away at the keys in the early morning darkness being very careful not to awaken my wife who is a very light sleeper. Sometimes I’d listen to music but mostly I enjoyed the silence of this time when it seemed as if the entire world were frozen accept for me. After adjusting to the early morning start I felt like I’d discovered a cheat code for getting a couple “extra hours” out of my day. As much as it sucked the first week or it laid the foundation for my 1oo days.
+
+## One Day at a Time
+
+This idea of taking a large problem and chipping away little by little isn’t a novel idea. I’ve always heard “Rome wasn’t built in a day”, and what not. This was the key for me and once I accepted this concept it helped me eliminate my own anxieties and fears. I’d occassionlly become overwhelmed with how much I would need to learn on a topic or variety of topics but once I was able to take a step back and realign my focus it was all okay. I just needed to focus today on the topic at hand and I could deal with tomorrow’s topic then. The 100 Days of Code challenge was a great tool for helping me to keep myself accountable. Each day I’d tweet a note or comment for myself about what I’d worked on. In doing this I kept myself accountable but also had a nice reference for myself to look back on to see how far I’d come in this approach.
+
+## Finding a Mentor
+
+Sometimes it was helpful to bounce a question or seek an opinion from another. Luckily I’d found there are a lot of people very welcoming and willing to help if you just ask. There’s a limitless source of places to seek help. Some of the places I went and found help included: Twitter, LinkedIn, Slack, and Meetups.
+
+In many situations a quick message back and forth would get me unstuck but sometimes it was helpful to have a more in depth set of questions I wanted to address and a conversation may have been more useful. In these situations I’d use the same tools above and find someone locally and offer to buy the person a coffee or lunch in exchange for a chance to pick their brain a bit. If someone does take you up on this offer always come prepared with a list of your questions and be respectful of their time because the reality is their probably very busy and they’re really doing you a solid by taking the time to meet with you.
+
+## Embracing the Small Wins
+
+When I got started I recognized that I wasn’t coding anything groundbreaking, but that’s okay. Just like with learning anything new it’s baby steps at first. I had to remind myself that each new concept I was learning was something I hadn’t known the day before and for this reason I should be excited about my little bits of progress. Every couple weeks I’d skim my Twitter history to see my past tweets. In doing this I was able to show myself how far I’d come by simply sticking with it one day at a time. Progress comes slowly but it’s still progress after all.
+
+## Fighting Frustration with Patience
+
+Here’s the thing. Some days you won’t get everything accomplished that you had planned for yourself, and that’s okay. There were a number of days where I’d hit a slow patch where I needed to slow down and re-read or rewatch something to better understand it. Initially I’d get frustrated because if I had to go back and re-do something it meant I’d fall behind on my schedule for the week. The thing I had to remind myself of was that the plan can change and it’s not the end of the world. It’s probably better to spend a little more time and fall a day behind than to skip past something without really understanding the thing I was supposed to learn.
+
+When you’re learning to code or learning anything one hour of one day at a time the reality is patience is your best friend. You do what you can do with that time and that’s the way it goes. I wouldn’t check a new item off my list each and every day because some concepts would require multiple days strung together. Once I’d accepted this many anxieties about my own progress and learning began to vanish.
+
+## Error Messages Aren’t All that Bad
+
+Error codes freaked me out. Truthfully they still do now, but I feel much better about them now. At first an error message would make me want to shut my laptop, pack it up, and call it a day. Or maybe this whole coding thing just wasn’t for me. The thing is, the error message is usually trying to help you. It’s pointing you in the direction of the answer if you just take the time to work with it. I came to realize an error message plus a little google was all you needed to resolve the error. In most of these situations, someone else has already done exactly what you had done and ran into this error and so there’s probably a StackOverflow thread from 2007 that’ll discuss how to solve your very problem. Patience and accepting that this is all part of the process makes for a happier programmer.
+
+## Supplemental Activities & Resources
+
+When I wasn’t coding at my computer in the morning I found ways to sneak in additional resources along the way to help me stay motivated, learn more about the industry, and to add context to some of the things I was learning. I listened to podcasts, read books, and attended local meetups and events. I’ve listed some of my favorites in the sidebar.
+
+## What’s Next?
+
+100 days down, but this certainly isn’t the end. There’s a lot more to learn, in fact, I’m told the learning never really ends, and I’m okay with that. I’m enjoying the process. Starting tomorrow I’ll be continuing through the Odin Project an hour a day and tweeting my daily progress to keep myself accountable.
+
+What’s your goal and how are you going to get there? Leave me a note in the comments or tweet me at [@loudmouse312][@loudmouse312].
+
+---
+
+### Resources I’ve Found Helpful
+
+#### Books
+
+- [Learn to Program][Learn to Program] by Chris Pine
+- [Practical Object Oriented Design in Ruby (POODR)][Practical Object Oriented Design in Ruby] by Sandi Metz
+- [Ruby on Rails Tutorial][Ruby on Rails Tutorial] by Michael Hartl
+- [The Pragmatic Programmer][The Pragmatic Programmer] by Andrew Hunt and David Thomas
+- [Hackers: Heroes of the Computer Revolution][Hackers: Heroes of the Computer Revolution] by Steven Levy
+
+#### Podcasts
+
+- [CodeNewbie][CodeNewbie] with Saron Yitbarek
+- [Ruby on Rails Podcast][Ruby on Rails Podcast] with Kyle Daigle
+- [Full Stack Radio][Full Stack Radio] with Adam Wathan
+
+#### Meetups
+
+- [Chicago Ruby][Chicago Ruby] hosted by Nicole Carpenter and 8th Light
+- [ChiHackNight][ChiHackNight] organized by Derek Eder, Christopher Whitaker, and Emily Drevets
+
+
+
+[100 days of code]: /images/100_days_of_code.jpg "100 Days of Code"
+[100 Days of Code - Official Website]: https://www.100daysofcode.com/
+[The Odin Project]: https://www.theodinproject.com/
+[@loudmouse312]: https://twitter.com/loudmouse312
+[Learn to Program]: https://pine.fm/LearnToProgram/
+[Practical Object Oriented Design in Ruby]: https://www.poodr.com/
+[Ruby on Rails Tutorial]: https://www.railstutorial.org/book
+[The Pragmatic Programmer]: https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master-ebook/dp/B003GCTQAE
+[Hackers: Heroes of the Computer Revolution]: https://www.amazon.com/Hackers-Computer-Revolution-Steven-Levy/dp/1449388396
+[CodeNewbie]: https://www.codenewbie.org/podcast
+[Ruby on Rails Podcast]: http://5by5.tv/rubyonrails
+[Full Stack Radio]: http://www.fullstackradio.com/
+[Chicago Ruby]: https://www.meetup.com/ChicagoRuby/
+[ChiHackNight]: https://chihacknight.org/

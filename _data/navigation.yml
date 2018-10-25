@@ -1,0 +1,7 @@
+main:
+  - title: "Blog"
+    url: /posts/
+  - title: "Content by Tag"
+    url: /tags/
+  - title: "Portfolio"
+    url: /collection-archive/

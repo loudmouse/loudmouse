@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Loudmouse.xyz"
+title                    : "Loudmouse.io"
 title_separator          : "-"
 name                     : "Nolan Neeley"
 description              : "Full Stack Developer"
@@ -112,7 +112,7 @@ author:
       url: mailto:nolanneeley@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://loudmouse.xyz"
+      # url: "#"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/loudmouse312"
@@ -148,6 +148,13 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
+
+# Portfolio Setup as a Collection
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
 # Reading Files
 include:
@@ -248,12 +255,30 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
+# category_archive:
+#   type: liquid
+#   path: /categories/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
+
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -288,3 +313,11 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
