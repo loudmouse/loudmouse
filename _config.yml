@@ -113,6 +113,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "#"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/nolanneeley/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/loudmouse312"
@@ -152,9 +155,9 @@ footer:
 # Portfolio Setup as a Collection
 
 collections:
-  portfolio:
+  cookies:
+  projects:
     output: true
-    permalink: /portfolio/:path/
 
 # Reading Files
 include:

@@ -1,5 +1,6 @@
 ---
 title: "Chicago Water Tanks"
+layout: home
 toc: true
 excerpt: "Help map historical water tanks in the city of Chicago. Happy mapping!"
 header:

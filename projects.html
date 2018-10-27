@@ -1,0 +1,13 @@
+---
+title: Projects
+layout: archive
+
+---
+
+
+{% for project in site.projects %}
+  <a href="{{ project.url }}">
+    <h2>{{ project.title }}</h2>
+  </a>
+  <p>{{ project.excerpt }}</p>
+{% endfor %}

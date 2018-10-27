@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Javascript's setTimeout"
+title:  "setTimeout"
 date:   2018-10-24
 categories: [programming]
 tags: [javascript]
