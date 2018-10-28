@@ -4,6 +4,7 @@ title:  "Ternary Operators"
 date:   2018-10-25
 categories: [programming]
 tags: [javascript]
+excerpt: "Read about using ternary operators for writing if else statements in shorthand."
 ---
 
 A ternary operator is like shorthand for an if else statement. It looks sort of weird but once you understand what's going on it saves keystrokes.

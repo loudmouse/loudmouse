@@ -4,6 +4,8 @@ title:  "Constructor Functions"
 date:   2018-10-26
 categories: [programming]
 tags: [javascript]
+excerpt: "Read about javascript constructor functions, create a guitar factory, and then build a guitar for Willie Nelson."
+
 ---
 
 Constructor functions let us create objects using a sort of template. The object can share things in common but also have their own unique attributes.

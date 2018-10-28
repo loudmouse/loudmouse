@@ -4,6 +4,7 @@ title:  "setTimeout"
 date:   2018-10-24
 categories: [programming]
 tags: [javascript]
+excerpt: "Read how I used setTimeout() to solve an issue I was facing while working with the Flickr API."
 ---
 
 ![alt text][setTimeout]

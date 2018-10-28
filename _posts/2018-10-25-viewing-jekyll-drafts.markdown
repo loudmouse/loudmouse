@@ -4,6 +4,8 @@ title:  "How to View Jekyll Drafts"
 date:   2018-10-25
 categories: [programming]
 tags: [jekyll]
+excerpt: "A quick step by step on viewing Jekyll drafts."
+
 ---
 
 1. Create a `_drafts` folder in the root directory (one time setup)

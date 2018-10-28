@@ -4,6 +4,8 @@ title:  "Reflections on My 100 Days of Code"
 date:   2018-03-12
 categories: [programming]
 tags: [100 days of code]
+excerpt: "Progress with anything is made one day at a time. Read about my process for learning to program."
+
 ---
 
 ![alt text][100 days of code]

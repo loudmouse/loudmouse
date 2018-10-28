@@ -1,8 +1,8 @@
 ---
 title: "Chicago Water Tanks"
-layout: home
 toc: true
-excerpt: "Help map historical water tanks in the city of Chicago. Happy mapping!"
+layout: single
+excerpt: "See how I built a web app with Ruby on Rails to crowdsource the mapping of historical water tanks in the city of Chicago. Happy mapping!"
 header:
   image: /images/banner-background-malcolm-lightbody.jpg
   teaser: /assets/images/foo-bar-identity-th.jpg
@@ -10,7 +10,7 @@ sidebar:
   - title: "Role"
     image: /images/chicago-water-tanks-icon-300x300.png
     image_alt: "Chicago Water Tanks"
-    text: "Full Stack Developer"
+    text: "Full Stack Development"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg

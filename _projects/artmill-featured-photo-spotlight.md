@@ -1,8 +1,8 @@
 ---
 title: "Artmill Photo Spotlight - Architecture"
-layout: home
 toc: true
-excerpt: "Each week we chat with a new photographer and feature one of his or her photos."
+layout: single
+excerpt: "Each week I chat with a new photographer and feature one of his or her photos. See how I used calls to the Unsplash API to populate a template with fresh content for each week's feature."
 header:
   image: /images/architecture.jpg
   teaser: /assets/images/foo-bar-identity-th.jpg
@@ -10,7 +10,7 @@ sidebar:
   - title: "Role"
     image: /images/artmill-logo.jpg
     image_alt: "Artmill.com"
-    text: "Front End Developer"
+    text: "Front End Development"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
@@ -27,18 +27,27 @@ gallery:
 
 Each week we wanted to feature a photo on a theme from a different photographer. We'd then also share photos from other photographers on that same theme. This first week's feature was **architectural photography**.
 
+---
+
+## Live Site
+
 For a live version, visit: [Artmill Featured Photo Spotlight](https://www.artmill.com/blog/photo-spotlight-architectural-photography/)
+
+---
+
+## Github Repository
 
 To view code for the prototype, visit: [the GitHub repo](https://github.com/loudmouse/photo_spotlight)
 
-![Artmill Photo Spotlight Featured Photographer](/images/artmill-featured-photographer.png)
-
+---
 
 ## Requirements
 
 1. I needed to build a system that once in place could be easily updated each week by a non-technical member of our team.
 2. The system would need to automatically display relevant info about the featured photographer such as his or her name, a profile photo, location, and social media links.
 3. The system would also need to pull in a collection of similarly themed photos and display those on the page.
+
+---
 
 ## My Solution
 
@@ -56,9 +65,26 @@ I then used javascript to render HTML elements to the page with custom classes. 
 
 ---
 
-## Author
+## Tech Stack
 
-**Nolan Neeley** - [Nolan's GitHub](https://github.com/loudmouse)
+### [Javascript](https://www.javascript.com/)
+  <!-- The programming language used -->
+
+### [Unsplash API](https://unsplash.com/documentation)
+  <!-- The programming language used -->
+
+### [Bootstrap](https://getbootstrap.com/)
+  <!-- The framework used -->
+
+### [HTML](https://www.w3.org/html/)
+  <!-- The framework used -->
+
+
+### [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  <!-- The framework used -->
+
+
+
 
 ---
 
