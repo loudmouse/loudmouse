@@ -127,22 +127,19 @@ The next step is to write the descriptions for the tests. You'll note each test 
   '6. It should not skip holes.': function() {
     fail();
   },
-  '7. It should return an element': function() {
+  '7. If the currentValue passed to the callback returns true, then the function should return that element.': function() {
     fail();
   },
-  '8. If the currentValue passed to the callback returns true, then the function should return that element.': function() {
+  '8. If none of the elements passed as currentValue evaluate to true, then the function should return undefined.': function() {
     fail();
   },
-  '9. If none of the elements passed as currentValue evaluate to true, then the function should return undefined.': function() {
-    fail();
-  },
-  '10. It should not mutate the original array.': function() {
+  '9. It should not mutate the original array.': function() {
     fail();
   }
   });
 {% endhighlight %}
 
-### All Red
+### All Red (Failing)
 
 Now that we have written descriptions for each of the tests and forced them to fail we should see all red, failing tests when we open the file in the console. Our goal is to eventually have all green, passing tests.
 
@@ -406,8 +403,274 @@ We got this passing test for free. Enjoy it.
 
 ![Six Passing Tests](/images/six-passing-tests.png)
 
+#### Test Seven
+
+Our seventh requirement is **'If the currentValue passed to the callback returns true, then the function should return that element.'**.
+
+1. Once again we create a variable `numberOfTimesCallbackHasRun` to keep track of the number of times the callback has run.
+2. We create an a variable `returnValueOfFind` to store the return value of the find function.
+3. We call the find function and pass it an array and pass `currentValue` to the callback function.
+4. Inside the callback function we increment `numberOfTimesCallbackHasRun`
+5. We want to return the first element we find that is equal to 3. Again, this value will be saved to  `returnValueOfFind`.
+6. We make an equality assertion that the `returnValueOfFind` will be 3.
+7. We also make another equality assertion that `numberOfTimesCallbackHasRun` will be 3 because the function should stop after it has found its match which in this test will be after the third iteration.
+
+{% highlight javascript %}
+  tests({
+
+    '7. If the currentValue passed to the callback returns true, then the function should return that element.': function() {
+      var numberOfTimesCallbackHasRun = 0;
+      var returnValueOfFind = find([1,2,3,4,5], function(currentValue){
+        numberOfTimesCallbackHasRun++
+        return currentValue === 3;
+      })
+      eq(returnValueOfFind, 3);
+      eq(numberOfTimesCallbackHasRun, 3);
+      }
+
+  });
+{% endhighlight %}
+
+When we run the tests we get our seventh failure:
+
+`Error: assertEquals() "undefined" != "3"`
+
+##### Make it Pass
+
+We see that `returnValueOfFind` is undefined. Here's what we do to make it pass.
+
+1. We want to return the `currentValue` if the callback evaluates to true so let's wrap the callback in an `if` statement.
+2. Then inside the callback function we add `return array[i]`.
 
 
+{% highlight javascript %}
+
+  function find(array, callback, optionalThis) {
+    var findCallback = callback;
+
+    if (optionalThis) {
+      findCallback = callback.bind(optionalThis);
+    }
+
+    for(var i = 0; i < array.length; i++){
+      if (findCallback(array[i], i, array)) {
+        return array[i];
+      }
+    }
+  }
+
+{% endhighlight %}
+
+We run the test again and this time it passes.
+
+![Seven Passing Tests](/images/seven-passing-tests.png)
+
+
+#### Test Eight
+
+Our eigth requirement is **'If none of the elements passed as currentValue evaluate to true, then the function should return undefined.'**.
+
+2. Again we create an a variable `returnValueOfFind` to store the return value of the find function.
+3. We call the find function and pass it an array and pass `currentValue` to the callback function.
+5. We want to return the first element we find that is equal to 4. Again, this value will be saved to  `returnValueOfFind`.
+6. We make an equality assertion that the `returnValueOfFind` will be 4.
+
+{% highlight javascript %}
+  tests({
+
+      '8. If none of the elements passed as currentValue evaluate to true, then the function should return undefined.': function() {
+      var returnValueOfFind = find([1], function(currentValue){
+        return currentValue === 4;
+      })
+      eq(returnValueOfFind, undefined);
+      }
+
+  });
+{% endhighlight %}
+
+When we run this test we see that it also passes. Another freebie.
+
+`Error: assertEquals() "undefined" != "3"`
+
+##### Make it Pass
+
+We didn't have to write any additional code to make this pass. The reason is because the function didn't find a match, no value is saved to `returnValueOfFind` so therefore it will return `undefined`. This is exactly the outcome we want.
+
+1. It's not required, but we could explicit and write `return undefined;` at the end of the function which which would be returned if no match is found. It's not required but you could do this to be more clear.
+
+
+{% highlight javascript %}
+
+  function find(array, callback, optionalThis) {
+    var findCallback = callback;
+
+    if (optionalThis) {
+      findCallback = callback.bind(optionalThis);
+    }
+
+    for(var i = 0; i < array.length; i++){
+      if (findCallback(array[i], i, array)) {
+        return array[i];
+      }
+    }
+    return undefined;
+  }
+
+{% endhighlight %}
+
+We run the test again and it still passes.
+
+![Eight Passing Tests](/images/eight-passing-tests.png)
+
+#### Test Nine
+
+Our ninth requirement is **'It should not mutate the original array.'**.
+
+1. We'll create an array of numbers and assign it to variable `originalArray`.
+2. We call the function passing it `originalArray` and then call the callback function passing it `currentValue`.
+3. Within the callback function we want to return `currentValue` if it's equal to 3.
+4. We're going to now make some assertions to test that `originalArray` is not mutated after the function runs.
+5. We check that the length of `originalArray` is still 3.
+6. We check that the value of of each of the indices are still the same.
+
+{% highlight javascript %}
+  tests({
+
+      '9. It should not mutate the original array.': function() {
+        var originalArray = [1,2,3];
+        find(originalArray, function(currentValue){
+          return currentValue === 3;
+        });
+        eq(originalArray.length, 3);
+        eq(originalArray[0], 1);
+        eq(originalArray[1], 2);
+        eq(originalArray[2], 3);
+      }
+
+  });
+{% endhighlight %}
+
+When we run the tests once again we'll see this test passes as well.
+
+##### Make it Pass
+
+Another freebie. This does confirm that nothing we've written will cause the `originalArray` to be changed which is exactly what we want. Nice work.
+
+![Nine Passing Tests](/images/nine-passing-tests.png)
+
+### Our Find Function
+
+Here's a look at the final version of our `find()` function:
+
+{% highlight javascript %}
+
+  function find(array, callback, optionalThis) {
+    var findCallback = callback;
+
+    if (optionalThis) {
+      findCallback = callback.bind(optionalThis);
+    }
+
+    for(var i = 0; i < array.length; i++){
+      if (findCallback(array[i], i, array)) {
+        return array[i];
+      }
+    }
+    return undefined;
+  }
+
+{% endhighlight %}
+
+### Our Tests
+
+And here's a look at all of our tests together.
+
+{% highlight javascript %}
+
+  tests({
+
+    '1. It should run the callback array.length number of times.': function() {
+      var numberOfTimesCallbackHasRun = 0;
+      var array = [1,2];
+      var length = array.length;
+      find(array, function() {
+        numberOfTimesCallbackHasRun++;
+      });
+      eq(numberOfTimesCallbackHasRun, length)
+    },
+    '2. It should pass currentValue as the first argument to the callback.': function() {
+      find([1], function(currentValue){
+        eq(currentValue, 1);
+      })
+    },
+    '3. It should pass currentIndex as the second argument to the callback.': function() {
+      find([1], function(currentValue, currentIndex){
+        eq(currentIndex, 0);
+      })
+    },
+    '4. It should pass the array as the third argument to the callback.': function() {
+      var testArray = [1,2,3];
+      find(testArray, function(currentValue, currentIndex, originalArray){
+        eq(originalArray, testArray);
+      })
+    },
+    '5. It should accept an optionalThis.': function() {
+      find([1], function(){
+        eq(this.thisArg, 'Object to use as this when executing callback.');
+      },{thisArg: 'Object to use as this when executing callback.'})
+    },
+    '6. It should not skip holes.': function() {
+      var numberOfTimesCallbackHasRun = 0;
+      var array = [1,,2];
+      find(array, function(currentValue){
+        numberOfTimesCallbackHasRun++;
+      });
+      eq(numberOfTimesCallbackHasRun, array.length);
+    },
+    '7. If the currentValue passed to the callback returns true, then the function should return that element.': function() {
+      var numberOfTimesCallbackHasRun = 0;
+      var returnValueOfFind = find([1,2,3,4,5], function(currentValue){
+        numberOfTimesCallbackHasRun++
+        return currentValue === 3;
+      })
+      eq(returnValueOfFind, 3);
+      eq(numberOfTimesCallbackHasRun, 3);
+    },
+    '8. If none of the elements passed as currentValue evaluate to true, then the function should return undefined.': function() {
+      var returnValueOfFind = find([1], function(currentValue){
+        return currentValue === 4;
+      })
+      eq(returnValueOfFind, undefined);
+    },
+    '9. It should not mutate the original array.': function() {
+      var originalArray = [1,2,3];
+      find(originalArray, function(currentValue){
+        return currentValue === 3;
+      })
+      eq(originalArray.length, 3);
+      eq(originalArray[0], 1);
+      eq(originalArray[1], 2);
+      eq(originalArray[2], 3);
+    }
+  });
+
+{% endhighlight %}
+
+### All Green (Passing)
+
+We've come a long way so let's take this in one more time.
+
+![Nine Passing Tests](/images/nine-passing-tests.png)
+
+### Final Thoughts
+
+If you've made it this far, congrats. This isn't an easy piece to read. As I said at the start, I'm pretty bad at testing but I'm using this methodology to get better.
+
+### Next Steps
+
+If you found this content helpful and you're trying to learn or improve your programming skills then I can't recommend enough that you consider working through [Watch & Code][Watch & Code].
+
+Gordon, the creator of the course, offers a free course called Practical Javascript. Start there and if you feel like you are getting value from it then keep with it. It's been the best resource I've found for learning how to read code, write code, and think like a programmer.
 
 
 <!-- Links -->
