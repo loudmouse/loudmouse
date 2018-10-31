@@ -13,7 +13,7 @@ I **really** struggled with testing and test driven development while I was lear
 
 In his course we followed test driven development to write our own versions of Javascript's native array methods such as: forEach, filter, map, and reduce. Before moving forward in the course Gordon encourages his students to try and rewrite the rest of Javascript's native array methods using test driven development. I took a stab at writing Array.find on my own. Here's the methodology I followed.
 
-You can get the code for this example by downloading or cloning the Github repository here: https://github.com/loudmouse/test-driven-development
+You can get the code for this example by downloading or cloning the Github repository here: [https://github.com/loudmouse/test-driven-development][https://github.com/loudmouse/test-driven-development]
 
 ### The Testing Framework
 
@@ -676,5 +676,6 @@ Gordon, the creator of the course, offers a free course called Practical Javascr
 <!-- Links -->
 [Watch & Code]: https://watchandcode.com/
 [tinytest.js]: https://github.com/joewalnes/jstinytest
+[https://github.com/loudmouse/test-driven-development]: https://github.com/loudmouse/test-driven-development
 [MDN Docs on Array.find]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 [ECMA specs]: https://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.find
