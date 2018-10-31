@@ -37,7 +37,7 @@ To begin I setup a base file as a sort of template to work from based on some of
 Below is an example of the file I'd setup to begin my test driven development workflow.
 
 {% highlight javascript %}
-  <script src="../simpletest.js"></script>
+  <script src="simpletest.js"></script>
   <script>
 
     // Docs:
