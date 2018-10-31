@@ -9,7 +9,7 @@ excerpt: "Follow along as I take you through the steps of writing a Javascript f
 ---
 
 ## A Test Driven Development Approach
-I **really** struggled with testing and test driven development while I was learning Ruby. While working through Gordon's course he does a really great job of walking his students through the test driven process. His course uses Javascript but I believe the principles carry over language to language. Admittedly, I'm still really bad at test driven development but at least I now have a framework and a methodology I can now use to improve.
+I **really** struggled with testing and test driven development while I was learning Ruby. While working through Gordon's course, [Watch & Code][Watch & Code], he does a really great job of walking his students through the test driven process. His course uses Javascript but I believe the principles carry over language to language. Admittedly, I'm still really bad at test driven development but at least I now have a framework and a methodology I can now use to improve.
 
 In his course we followed test driven development to write our own versions of Javascript's native array methods such as: forEach, filter, map, and reduce. Before moving forward in the course Gordon encourages his students to try and rewrite the rest of Javascript's native array methods using test driven development. I took a stab at writing Array.find on my own. Here's the methodology I followed.
 
