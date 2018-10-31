@@ -1,10 +1,10 @@
 ---
 layout: single
 toc: true
-title:  "Writing a find method with test driven development"
+title:  "Test Driven Development"
 date:   2018-10-30
 categories: [programming]
-tags: [javascript, test driven development]
+tags: [javascript, test driven development, testing]
 excerpt: "Follow me as I take you through the steps of writing a Javascript find method using test driven development."
 ---
 
