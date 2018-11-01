@@ -5,6 +5,8 @@ date:   2018-10-29
 categories: [programming]
 tags: [javascript]
 excerpt: "Learn how to add basic CSS styling to console text using console.log() and a bit of special syntax."
+header:
+  teaser: /images/russn_fckr-66974-unsplash.jpg
 
 ---
 

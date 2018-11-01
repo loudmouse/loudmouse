@@ -6,6 +6,8 @@ date:   2018-10-30
 categories: [programming]
 tags: [javascript, test driven development, testing]
 excerpt: "Follow along as I take you through the steps of writing a Javascript find method using test driven development."
+header:
+  teaser: /images/glenn-carstens-peters-190592-unsplash.jpg
 ---
 
 ## A Test Driven Development Approach

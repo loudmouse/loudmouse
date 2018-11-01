@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Nolan Neeley"
   avatar           : "/images/nolan.jpeg"
-  bio              : "I'm a Full Stack Developer with a background in digital marketing and tech sales. I'm using Ruby on Rails, Javascript, and other tools to solve problems and create efficiencies. In my free time I enjoy rock climbing and spending time with my wife and son."
+  bio              : "I'm an aspiring Full Stack Developer with a background in digital marketing and tech sales. I'm using Ruby on Rails, Javascript, and other tools to solve problems and create efficiencies. In my free time I enjoy rock climbing and spending time with my wife and son."
   location         : "Chicago, IL"
   email            :
   links:
@@ -134,13 +134,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/loudmouse312"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/loudmouse"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -155,7 +155,6 @@ footer:
 # Portfolio Setup as a Collection
 
 collections:
-  cookies:
   projects:
     output: true
 
@@ -201,7 +200,7 @@ markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
+incremental: true
 
 
 # Markdown Processing

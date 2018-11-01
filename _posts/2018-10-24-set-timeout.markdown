@@ -5,6 +5,8 @@ date:   2018-10-24
 categories: [programming]
 tags: [javascript]
 excerpt: "Read how I used setTimeout() to solve an issue I was facing while working with the Flickr API."
+header:
+  teaser: /images/icons8-team-643498-unsplash1.jpg
 ---
 
 ![alt text][setTimeout]

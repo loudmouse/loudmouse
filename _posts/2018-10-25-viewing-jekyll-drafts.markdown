@@ -5,6 +5,8 @@ date:   2018-10-25
 categories: [programming]
 tags: [jekyll]
 excerpt: "A quick step by step on viewing Jekyll drafts."
+header:
+  teaser: /images/aaron-burden-521422-unsplash.jpg
 
 ---
 
