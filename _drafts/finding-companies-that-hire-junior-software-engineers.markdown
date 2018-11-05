@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "How I made a list of companies that hire Junior Software Engineers"
-date:   2018-10-26
 categories: [programming]
 tags: [tips, howto]
 ---
